@@ -9,6 +9,11 @@
     --ocean: #404BBF;
     --span: #f4f4f4fd;
     --NAVY-BLUE-modal: rgba(46, 47, 66, 0.4);
+    --width-full:428px;
+    --width:396px;
+    --font-size:36px;
+    --line-height:var(--line-height);
+    --letter-spacing: 0.72px;
 }
 
 body {
@@ -17,7 +22,7 @@ body {
     font-style: normal;
     color: #434455;
     background-color: #FFFFFFFF;
-    height: 1440px;
+    /*height: 1440px;*/
 }
 
 
@@ -61,10 +66,10 @@ svg {
 }
 
 .a.link {
-    padding: 24px 0 24px;
+    /*padding: 24px 0 24px;*/
     display: flex;
-    max-width: 100%;
-    height: auto;
+    /*max-width: 100%;
+    height: auto;*/
 }
 
 .link:hover {
@@ -81,6 +86,15 @@ svg {
 }
 
 /*Classes style*/
+
+
+/* start fereastra modala */
+
+.display-class{
+    display:none;
+}
+
+
 
 .modal {
     position: fixed;
@@ -333,16 +347,18 @@ textarea {
 
 }
 
+/* End modal page */
+
 .container {
-    width: 1158px;
+    max-width: var(--width-mobile-full);
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 15px; 
 }
 
 .flex-space {
     display: flex;
     justify-content: space-between;
-    height: 72px;
+    /* height: 72px; */
 }
 
 
@@ -352,6 +368,8 @@ textarea {
     border-bottom: 1px solid var(--CORNFLOWER, #E7E9FC);
     display: flex;
     box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+    max-width: var(--width-mobile-full);
+    align-items: center;
 }
 
 .nav-list {
@@ -371,7 +389,7 @@ textarea {
     text-transform: uppercase;
     text-decoration: none;
     background: var(--WHITE, #FFF);
-    margin-right: 76px;
+    /* margin-right: 76px; */
 
 }
 
@@ -399,7 +417,7 @@ textarea {
     letter-spacing: 0.32px;
     display: flex;
     gap: 40px;
-    display: flex;
+    display: none;
 
 }
 
@@ -422,9 +440,10 @@ textarea {
 
 .topline-section {
     color: var(--navy-blue);
-    padding: 24px 0;
+    /* padding: 24px 0; */
     position: relative;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .topline-section:hover {
@@ -440,8 +459,8 @@ textarea {
 }
 
 .topline-address {
-    min-width: none;
-    min-height: max-content;
+    /* min-width: none;
+    min-height: max-content; */
     color: var(--slate);
     font-style: normal;
     font-size: 16px;
@@ -459,6 +478,7 @@ textarea {
 .address {
     color: var(--slate);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: none;
 }
 
 .address:hover {
@@ -470,7 +490,7 @@ textarea {
 }
 
 .hero-section {
-    max-width: 1440px;
+    max-width: var(--width-mobile-full);
     background-color: var(--navy-blue);
     background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url("../images/people-office.jpg");
     background-repeat: no-repeat;
@@ -488,10 +508,10 @@ textarea {
 .title-hero {
     color: var(--white, #FFF);
     text-align: center;
-    font-size: 56px;
-    line-height: 107.143%;
-    letter-spacing: 1.12px;
-    max-width: 496px;
+    font-size: var(--font-size);
+    line-height: var(--line-height);
+    letter-spacing: var(--letter-spacing);
+    max-width: 320px;
     margin: 0 auto;
     padding-bottom: 48px;
 }
@@ -521,7 +541,7 @@ textarea {
 }
 
 .feature-section {
-    padding: 120px 0;
+    /* padding: 120px 0; */
 }
 
 .visually-hidden {
@@ -539,22 +559,27 @@ textarea {
 
 
 .feature-list {
-    display: flex;
+    /* display: flex; */
+    max-width: var(--width-mobile);
     gap: 24px;
 }
 
 .feature-list-element {
-    width: 100%;
-    min-width: 264px;
-}
+    display: flex;
+    flex-direction: column;
+   
+    /* width: 100%;
+    min-width: 264px; */
+} 
 
 .feature-title {
     color: var(--navy-blue, #2E2F42);
-    font-size: 20px;
+    font-size: var(--font-size);
     font-weight: 500;
     line-height: 120%;
     letter-spacing: 0.4px;
     margin-bottom: 8px;
+    text-align: center;
 }
 
 .feature-body {
@@ -578,23 +603,25 @@ textarea {
     border-radius: 4px;
     gap: 24px;
     margin-bottom: 8px;
+    display: none;
 
 }
 
 
 
 .wawd-section {
-    padding-bottom: 120px;
+    /* padding-bottom: 120px; */
     display: flex;
+    
 }
 
 .title-two {
     color: var(--navy-blue, #2E2F42);
     text-align: center;
-    font-size: 36px;
+    font-size: var(--font-size);
     font-weight: 700;
-    line-height: 111.111%;
-    letter-spacing: 0.72px;
+    line-height: var(--line-height);
+    letter-spacing: var(--letter-spacing);
     text-transform: capitalize;
     margin-bottom: 72px;
 }
@@ -602,10 +629,12 @@ textarea {
 .wawd-list {
     display: flex;
     gap: 24px;
+    
 }
 
 .purpose-images {
     color: var(--cornflower);
+    display: none;
 
 }
 
@@ -622,6 +651,7 @@ textarea {
 
 .team-list {
     display: flex;
+    flex-direction: column;
     gap: 24px;
 
 }
@@ -696,11 +726,12 @@ textarea {
 
 
 .customers-section {
-    display: flex;
-    justify-content: space-between;
+    /* display: flex;
+    justify-content: space-between; */
     align-items: center;
     gap: 24px;
     padding-bottom: 120px;
+    columns: 2;
 }
 
 .customer-section {
@@ -725,6 +756,7 @@ textarea {
     justify-content: center;
     color: #8e8f99;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    column-gap: 20px;
 }
 
 .customer-link-icon:hover,
@@ -755,8 +787,8 @@ textarea {
 }
 
 .filters-list {
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
     gap: 24px;
     margin-bottom: 72px;
 
@@ -885,20 +917,20 @@ textarea {
 
 
 .footer {
-    width: 100%;
+    /* width: 100%; */
     background-color: var(--navy-blue);
-    display: flex;
+    /* display: flex;
     justify-content: space-evenly;
-    align-items: center;
-    padding: 100px 100px;
-    gap: 1px;
+    align-items: center; */
+    /* padding: 100px 100px;
+    gap: 1px; */
 
 
 }
 
 .footer-all {
-    display: flex;
-    align-items: baseline;
+    /* display: flex;
+    align-items: baseline; */
 }
 
 .footer-logo {
@@ -994,8 +1026,8 @@ textarea {
 
 .form-subscribe {
     position: relative;
-    display: flex;
-    flex-direction: row;
+    /* display: flex;
+    flex-direction: row; */
     gap: 24px;
     align-items: end;
 }

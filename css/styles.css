@@ -370,7 +370,20 @@ textarea {
 
 
 /* Start Hamburger menu*/
-
+.menu-toggle {
+    min-height: 40px;
+    min-width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+}
 
 /*End Hamburger menu*/
 
@@ -544,8 +557,7 @@ textarea {
     display: flex;
     flex-wrap: var(--flex-wrap);
     justify-content: center;
-    /* width: 100%;
-    min-width: 264px; */
+    width: calc((100% - 72px) / 4);
 } 
 
 .feature-title {
@@ -563,7 +575,7 @@ textarea {
     font-size: 16px;
     font-weight: 400;
     line-height: 150%;
-    letter-spacing: 0.32px;
+   
 
 }
 
@@ -578,7 +590,7 @@ textarea {
     background-color: var(--CLOUD, #F4F4FD);
     border-radius: 4px;
     gap: 24px;
-    margin-bottom: 8px;
+    /* margin-bottom: 8px; */
     display: none;
 
 }
@@ -1215,13 +1227,17 @@ textarea {
         --width-base: 320px;
         --width-full: 428px;
         --width: 396px;
-        --font-size: 36px;
-        --line-height: 120%;
-        --letter-spacing: 0.72px;
+        --font-size: 16px;
+        --line-height: 150%;
+        --letter-spacing: 0.32px;
         --flex-direction: row;
         --flex-wrap: nowrap;
     }
 
+
+    .container{
+        width: 1440px;
+    }
 .menu-toggle {
     display: none;
 }
@@ -1324,6 +1340,7 @@ textarea {
     .feature-list-element {
         display: flex;
         flex-direction: column;
+        height: auto;
     }
 
     .display-class {
@@ -1349,7 +1366,7 @@ textarea {
         background-color: var(--CLOUD, #F4F4FD);
         border-radius: 4px;
         gap: 24px;
-        margin-bottom: 8px;
+        /* margin-bottom: 8px; */
     }
     .feature-list{
         margin:120px auto 120px auto;

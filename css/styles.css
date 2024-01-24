@@ -392,6 +392,10 @@ textarea {
     border-radius: 50%;
     outline: none;
 }
+.menu-icon{
+    fill: var(--navy-blue);
+    margin-top: 10px;
+}
 
 .menu-container {
     position: fixed;

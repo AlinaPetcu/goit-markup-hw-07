@@ -401,7 +401,7 @@ textarea {
 .menu-icon {
     fill: var(--navy-blue);
     margin-top: 10px;
-    position: fixed;
+    position: absolute;
         right: 0;
         top: 10px;
 }
@@ -1522,6 +1522,7 @@ textarea {
         justify-content: space-between;
         align-items: center;
         height: 72px;
+        position: relative;
     }
 
     .nav-list {

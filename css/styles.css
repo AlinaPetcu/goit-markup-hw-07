@@ -985,7 +985,6 @@ textarea {
 
 .grid-list {
     max-width: calc((100% - 32px));
-    /*ajustare*/
 }
 
 
@@ -1298,17 +1297,17 @@ textarea {
         padding: 0 15px;
     }
 
-        .logo1 {
-            color: var(--iris, #4D5AE5);
-            font-family: Raleway, sans-serif;
-            font-size: 18px;
-            font-style: normal;
-            font-weight: 800;
-            line-height: 1.17;
-            letter-spacing: 0.03em;
-            text-transform: uppercase;
-            text-decoration: none;
-            background: var(--WHITE, #FFF);
+    .logo1 {
+        color: var(--iris, #4D5AE5);
+        font-family: Raleway, sans-serif;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 1.17;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        text-decoration: none;
+        background: var(--WHITE, #FFF);
             
     
         }
@@ -1497,17 +1496,17 @@ textarea {
         display: none;
     }
 
-        .logo1 {
-            color: var(--iris, #4D5AE5);
-            font-family: Raleway, sans-serif;
-            font-size: 18px;
-            font-style: normal;
-            font-weight: 800;
-            line-height: 1.17;
-            letter-spacing: 0.03em;
-            text-transform: uppercase;
-            text-decoration: none;
-            background: var(--WHITE, #FFF);
+    .logo1 {
+        color: var(--iris, #4D5AE5);
+        font-family: Raleway, sans-serif;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 1.17;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        text-decoration: none;
+        background: var(--WHITE, #FFF);
           
     
         }
